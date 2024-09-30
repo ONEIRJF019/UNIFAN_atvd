@@ -28,7 +28,7 @@ public class Questao{
         };
         
         ArrayList<String> respostaCorreta = new ArrayList<>();
-        ArrayList<String> respostaErrada = new ArrayList<>();
+        ArrayList<String> respostaErrada  = new ArrayList<>();
         
         System.out.println("---------------------------------------------------");
         System.out.println("");
