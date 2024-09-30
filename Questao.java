@@ -23,7 +23,7 @@ public class Questao{
             {"11. Explique o conceito de memória virtual e como ela é gerenciada pelo sistema operacional.", "espaco Disco Rigido Expansao RAM", "memoria Fisica Inativa", "memoria Processador Quando RAM Cheia", "memoria Reservada Dados Criticos", "nenhuma das alternativas"},
             {"12. Descreva a estrutura e função de um pipeline no processador e como ele melhora o desempenho.", "tecnica Divide Processamento Instrucoes", "processo Refrigeração Processador", "canal Comunicacao CPU Memoria", "sistema Gerenciar Multiplicidade", "nenhuma das alternativas"},
             {"13. Como a arquitetura de John von Neumann influencia o modelo de processamento sequencial em um sistema computacional?", "causa Gargalo Memoria", "intrduz Processamento Paralelo", "melhora Seguranca Multitarefa", "separa Dados Instrucoes", "nenhuma das alternativas"},
-            {"14. Quais são os desafios de segurança em IoT quando aplicado a cidades inteligentes?", "vulnerabilidades Sensores Dispositivos", "falta Integração Dispositivos Fabricantes", "dificuldade Expansao Rede","problemas Sincronizacao Dados", "nenhuma das alternativas"},
+            {"14. Quais são os desafios de segurança em IoT quando aplicado a cidades inteligentes ?", "vulnerabilidades Sensores Dispositivos", "falta Integração Dispositivos Fabricantes", "dificuldade Expansao Rede","problemas Sincronizacao Dados", "nenhuma das alternativas"},
             {"15. Explique a diferença entre a memória cache L1, L2 e L3 em termos de acesso e velocidade.", "cache L1 Maior Mais Lenta", "cache L1 Menor Mais Rapida", "cache L2 Apenas Dispositivos Externos", "cache L3 Nao Usada Processadores Modernos", "nenhuma das alternativas"}
         };
         
