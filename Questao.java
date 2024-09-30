@@ -10,7 +10,7 @@ public class Questao{
         
         String[][] quiz = {
             {"1. O que é um processador e qual é sua principal função em um sistema computacional?", "Armazenar dados permanente", " Executar instruções e realizar cálculos", " Controlar dispositivos de entrada e saída", 
-" Manter a tela ligada", "nenhuma das alternativas"},
+" Manter a tela ligada", "nenhuma das alternativas "},
             {"2. Qual é a diferença entre memória interna e memória externa?", "A memória interna é volátil e a externa é permanente", "A memória externa é mais rápida que a interna", "A memória interna armazena dados por mais tempo que a externa", "A memória externa é usada pelo processador para cálculos", "nenhuma das alternativas"},
             {"3. Para que serve a memória cache em um processador?", "armazenar Dados Temporarios", "armazenar Arquivos Sistema", "armazenar Programas Usuario", "armazenar Documentos Salvos", "nenhuma das alternativas"},
             {"4. Dê um exemplo de um dispositivo de entrada e um de saída em um computador.", "mouse", "monitor", "impressora", "foneDeOuvido", "nenhuma das alternativas"},
