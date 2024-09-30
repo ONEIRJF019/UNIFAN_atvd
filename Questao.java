@@ -42,7 +42,7 @@ public class Questao{
         System.out.println("");
         System.out.println("SEJA BEM VINDO AO QUIZ SOBRE TI !");
         System.out.println("");
-        System.out.println("Responda as respectivas perguntas selecionando o número correspondente a resposta");
+        System.out.println("Responda as Respectivas Perguntas Selecionando o Número Correspondente a Resposta ! Ao todo Serão 15 perguntas ! ");
         System.out.println("");
         
         //exibir pergunta
