@@ -44,6 +44,8 @@ public class Questao{
         System.out.println("");
         System.out.println("Responda as Respectivas Perguntas Selecionando o Número Correspondente a Resposta ! Ao todo Serão 15 perguntas ! ");
         System.out.println("");
+
+        char[] letras = {'A', 'B', 'C', 'D', 'E'}; //alternativas
         
         //exibir pergunta
         for ( int i = 0; i < quiz.length; i++) {
@@ -51,21 +53,23 @@ public class Questao{
             
             //exibir opções de pergunta//
             for (int j = 1; j < quiz[i].length; j++) {
-                System.out.println(j + ". " + quiz[i][j]);
+                System.out.println(letras[j - 1] + ". " + quiz[i][j]);
             }
             
             //receber respostas do usuário//
             System.out.println("");
-            System.out.print("Escolha uma opção (1 - " + (quiz[i].length - 1) + "): ");
-            int escolha = scanner.nextInt();
+            System.out.print("Escolha uma opção (A - " + letras[quiz[i].length - 2] + "): ");
+            char escolha = scanner.next().toUpperCase().charAt(0);
             scanner.nextLine();
+
+            int indiceEscolhido = escolha - 'A' + 1;
             
             if (quiz[i][escolha].equalsIgnoreCase(quiz[i][1])) {
                 // Adicionar ao array de respostas corretas
-                respostaCorreta.add(quiz[i][0] + " (Sua resposta: " + quiz[i][escolha] + ")");
+                respostaCorreta.add(quiz[i][0] + " (Sua resposta: " + quiz[i][indiceEscolhido] + ")");
             } else {
                 // Adicionar ao array de respostas erradas
-                respostaErrada.add(quiz[i][0] + " (Sua resposta: " + quiz[i][escolha] + " | Resposta correta: " + quiz[i][1] + ")");
+                respostaErrada.add(quiz[i][0] + " (Sua resposta: " + quiz[i][indiceEscolhido] + " | Resposta correta: " + quiz[i][1] + ")");
             }
         
         //Exibir resultados
