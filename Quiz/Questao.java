@@ -1,3 +1,4 @@
+package Quiz;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -28,7 +29,7 @@ public class Questao{
         };
         
         ArrayList<String> respostaCorreta = new ArrayList<>();
-        ArrayList<String> respostaErrada = new ArrayList<>();
+        ArrayList<String> respostaErrada  = new ArrayList<>();
         
         System.out.println("---------------------------------------------------");
         System.out.println("");
@@ -45,27 +46,31 @@ public class Questao{
         System.out.println("Responda as respectivas perguntas selecionando o número correspondente a resposta");
         System.out.println("");
         
+        char[] letras = {'A', 'B', 'C', 'D', 'E'}; //alternativas
+        
         //exibir pergunta
         for ( int i = 0; i < quiz.length; i++) {
             System.out.println(quiz[i][0]);
             
             //exibir opções de pergunta//
             for (int j = 1; j < quiz[i].length; j++) {
-                System.out.println(j + ". " + quiz[i][j]);
+                System.out.println(letras[j - 1] + ". " + quiz[i][j]);
             }
             
             //receber respostas do usuário//
             System.out.println("");
-            System.out.print("Escolha uma opção (1 - " + (quiz[i].length - 1) + "): ");
-            int escolha = scanner.nextInt();
+            System.out.print("Escolha uma opção (A - " + letras[quiz[i].length - 2] + "): ");
+            char escolha = scanner.next().toUpperCase().charAt(0);
             scanner.nextLine();
             
-            if (quiz[i][escolha].equalsIgnoreCase(quiz[i][1])) {
+            int indiceEscolhido = escolha - 'A' + 1;
+            
+            if (quiz[i][indiceEscolhido].equalsIgnoreCase(quiz[i][1])) {
                 // Adicionar ao array de respostas corretas
-                respostaCorreta.add(quiz[i][0] + " (Sua resposta: " + quiz[i][escolha] + ")");
+                respostaCorreta.add(quiz[i][0] + " (Sua resposta: " + quiz[i][indiceEscolhido] + ")");
             } else {
                 // Adicionar ao array de respostas erradas
-                respostaErrada.add(quiz[i][0] + " (Sua resposta: " + quiz[i][escolha] + " | Resposta correta: " + quiz[i][1] + ")");
+                respostaErrada.add(quiz[i][0] + " (Sua resposta: " + quiz[i][indiceEscolhido] + " | Resposta correta: " + quiz[i][1] + ")");
             }
         
         //Exibir resultados
