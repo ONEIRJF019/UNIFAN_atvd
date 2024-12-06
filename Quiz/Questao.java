@@ -102,7 +102,7 @@ public class Questao{
         //Calculo do tempo
         long tempoTotal = fimTempo - inicioTempo;
         double segundos = tempoTotal / 1000.0;
-        System.out.printf("\nVocê levou um tempo de %.2f segundos para completar o quiz.%n", segundos);
+        System.out.printf("\nVocê levou um tempo de %.2f segundos para completar o quiz.%n !", segundos);
         System.out.println("");
     }   
 }
